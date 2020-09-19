@@ -2,6 +2,8 @@
 #include<math.h>
 
 /* Exponentiation Operation*/
+
+
 int main() 
 {
 	int a, b;
