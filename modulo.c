@@ -1,5 +1,12 @@
  #include<stdio.h>
-   
+//Efficient way of calculating remainder and quotient.//
+void function(int *a,int *b)
+{
+    int c=*a,d=*b;
+    *a=c/d;
+    *b=c%d;
+}
+
    int main()
    {
      int a;
@@ -8,7 +15,7 @@
      scanf("%d", &a);
      printf("Number: ");
      scanf("%d", &b);
-     printf("The result of division is: %d\n", a/b);
-     printf("The result of modulo is: %d\n", a%b);
+     function(&a,&b);
+     printf("Quotient %d Remainder %d\n",a,b);
   }
 
